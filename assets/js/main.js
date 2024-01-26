@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
         var res = Number(inputs[0].value) * Number(inputs[1].value);
         document.querySelector(
           ".calculator_answer > span:nth-child(2)"
-        ).innerHTML = res / 100 + "%";
+        ).innerHTML = res / 100;
         document.querySelector(".inner_box").style.display = "block";
         document.querySelector(".inner_box").style.width =
-          "" + 300 * (res / 10000) + "px";
+          "" + 300 * (inputs[0].value / 100) + "px";
       } else {
         var inputs = document.querySelectorAll(".calculator_field_2 input");
         var res = Number(inputs[0].value) / Number(inputs[1].value);
