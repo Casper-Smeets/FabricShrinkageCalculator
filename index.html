@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Title -->
+    <title>Fabric Shrinkage Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator_header">
+        Fabric Shrinkage Calculator
+        <hr />
+      </div>
+      <div class="calculator_option">
+        <div class="fabric_type">
+          <input type="text" placeholder="Enter fabric" />
+        </div>
+        <div class="wash_type">
+          <select>
+            <option disabled>Select Wash Type</option>
+            <option>Raw Wash</option>
+            <option>Stone Wash</option>
+            <option>Mineral Wash</option>
+            <option>Vintage Wash</option>
+            <option>Acid Wash</option>
+            <option>Snow Wash</option>
+            <option>Enzyme Wash</option>
+            <option>Sand Wash</option>
+            <option>Silicone Wash</option>
+            <option>Bleach Wash</option>
+            <option>Destroy Wash</option>
+            <option>Whiskers Wash</option>
+            <option>Spray Stone Wash</option>
+            <option>Pigment Dyed Wash</option>
+            <option>Wrapping Up</option>
+            <option>Others...</option>
+          </select>
+        </div>
+      </div>
+      <div class="calculation_type">
+        <label>Calculation Type</label>
+        <select>
+          <option value="1">What is X% of Y</option>
+          <option value="2">X is what % of Y</option>
+        </select>
+      </div>
+      <div class="calculator_field_1">
+        <label>What is</label>
+        <div><input type="text" /> <span>%</span></div>
+        <label>of</label>
+        <input type="text" />
+      </div>
+      <div class="calculator_field_2">
+        <input type="text" />
+        <label>is what % of</label>
+        <input type="text" />
+      </div>
+      <div class="calculator_answer">
+        <span>Answer:</span>
+        <span></span>
+      </div>
+      <div class="calculator_shape">
+        <div class="out_box">
+          <div class="inner_box"></div>
+        </div>
+      </div>
+      <div class="calculator_action">
+        <button>Clear</button>
+        <button>Calculate</button>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
